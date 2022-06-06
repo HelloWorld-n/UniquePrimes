@@ -1,0 +1,6 @@
+
+let ∀@p, ∀@n
+	□ @p ∈ Prime
+	□ @p > 1
+	□ @n ∈ Integer
+UniquePrime := @p ** (2 ** @n)
