@@ -1,8 +1,7 @@
 #!/bin/python3
 import UniquePrimes
 
-
-if __name__ == "__main__":
+while __name__ == "__main__":
 	my_input = set()
 	print("\"0\" for exit\n")
 	while True:
@@ -25,3 +24,16 @@ if __name__ == "__main__":
 			
 	print(str(sorted(list(my_output))).replace("[", "{").replace("]", "}"))
 
+	again = None
+	while again not in [False, True]:
+		again = input("Again? ").upper() 
+		if again in ["0", "NO", "FALSE", "☐", "❎"]:
+			again = False
+		elif again in ["1", "YES", "TRUE", "☑", "✅"]:
+			again = True
+		else:
+			again = None
+			print("Invalid input, please pick binary digit!")
+	
+	if not again:
+		break
