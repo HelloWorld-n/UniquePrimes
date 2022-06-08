@@ -27,9 +27,9 @@ while __name__ == "__main__":
 	again = None
 	while again not in [False, True]:
 		again = input("Again? ").upper() 
-		if again in ["0", "NO", "FALSE", "☐", "❎"]:
+		if again in ["0", "NO", "FALSE", "☐", "❎", "✗"]:
 			again = False
-		elif again in ["1", "YES", "TRUE", "☑", "✅"]:
+		elif again in ["1", "YES", "TRUE", "☑", "✅", "✓"]:
 			again = True
 		else:
 			again = None
